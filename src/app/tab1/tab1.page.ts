@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IonicSlides } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab1',
@@ -8,5 +9,9 @@ import { Component } from '@angular/core';
 export class Tab1Page {
 
   constructor() {}
-
+  isModalOpen = false;
+  swiperModules = [IonicSlides];
+  setOpen(isOpen: boolean) {
+    this.isModalOpen = isOpen;
+  }
 }
