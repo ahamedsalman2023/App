@@ -12,7 +12,7 @@
     "lint": "ng lint",
     "git": "git add . && git commit -m 'update' && git push",
     "predeploy": "ng build --configuration production --base-href https://hasnatech.github.io/App/",
-    "deploy": "gh-pages -d www/App",
+    "deploy": "gh-pages -d www",
     "upload": "ng build --configuration production --base-href ./"
   },
   "private": true,
