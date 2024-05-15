@@ -9,7 +9,11 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "git": "git add . && git commit -m 'update' && git push",
+    "predeploy": "ng build --configuration production --base-href https://hasnatech.github.io/App/",
+    "deploy": "gh-pages -d dist/App",
+    "upload": "ng build --configuration production --base-href ./"
   },
   "private": true,
   "dependencies": {
